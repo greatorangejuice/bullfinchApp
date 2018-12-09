@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    background:#464646 url(/back.jpg);
+    /* Location of the image */
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+    
+
+
+nav {
+    border-top: solid #777;
+    border-bottom: solid #777; 
+    background-color: black;
+}
+
+.logo {
+    text-transform: uppercase;
+    /* color: #99cccc; */
+    color: #3aafab;
+    font-weight: 800;
+    font-size: 24px;
+}
+.top-menu_contact{
+    margin-left: auto; 
+}
+
+.top-menu {
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color:  whitesmoke;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 7px;
+    
+}
+
+.top-menu_contact:hover {
+    border-bottom: 2px solid #3aafab;
+}
+
+main {
+    background-image: url(/back.jpg);
+    height: 100%;
+}
+.b-container{
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:40%;
+    height: 50%;
+    padding:100px;
+    background-color: #3aafab;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+@media screen and (max-width: 300px) {
+    .top-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-menu a{
+      width: 100%;
+      margin-top: 10px;
+     
+    }
+
+    .top-menu a:hover {
+        background-color: burlywood;
+        border-bottom: none;
+    }
+}
+
